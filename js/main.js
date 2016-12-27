@@ -1,14 +1,13 @@
-  AFRAME.registerComponent('hightlight', {
-    schema: {
-      color: {default: 'red'}
-    },
+AFRAME.registerComponent('highlight', {
     init: function () {
-      var data = this.data;
-      this.el.addEventListener('mouseenter', function () {
-        this.setAttribute('color', data.color);
-      });
-      this.el.addEventListener('mouseleave', function () {
-        this.setAttribute('color', 'green');
-      });
+        var color = this.el.attributes.color.value;
+        var highlight = this.data.color;
+        
+        this.el.addEventListener('mouseenter', function () {
+            this.setAttribute('color', highlight);
+        });
+        this.el.addEventListener('mouseleave', function () {
+            this.setAttribute('color', color);
+        });
     }
-  });
+});
