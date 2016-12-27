@@ -1,0 +1,25 @@
+{
+  "name": "aframe-playground",
+  "version": "1.0.0",
+  "description": "Playing around with a-frame",
+  "main": "index.js",
+  "dependencies": {
+    "aframe": "^0.4.0"
+  },
+  "devDependencies": {
+    "aframe": "^0.4.0"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wred/aframe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wred/aframe/issues"
+  },
+  "homepage": "https://github.com/Wred/aframe#readme"
+}
