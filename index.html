@@ -4,9 +4,15 @@
     <script src="js/main.js"></script>
   </head>
   <body>
-    <a-scene stats>
-      <a-sphere radius="3" position="0 0 -10" color="#00CC00"></a-sphere>
+    <a-scene>
+      <a-assets>
+        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+      </a-assets>
+      <a-sphere src="#boxTexture" radius="3" position="0 2 -10" color="green" hightlight=""></a-sphere>
       <a-sky color="#000000"></a-sky>
+      <a-camera>
+        <a-cursor color="white"></a-cursor>
+      </a-camera>      
     </a-scene>
   </body>
 </html>
